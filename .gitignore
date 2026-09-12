@@ -1,0 +1,93 @@
+# --- Secrets / credentials ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+**/secrets/
+**/credentials/
+**/private/
+
+# --- Runtime / generated lab state ---
+runtime/
+records/
+machine-records/
+training-records/
+artifacts/
+outputs/
+tmp/
+temp/
+
+# --- Logs / transient output ---
+*.log
+*.out
+*.pid
+*.lock
+*.swp
+*.swo
+*~
+
+# --- Local backups / snapshots ---
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.snapshot
+
+# Keep repository-provided training fixtures even if their folder names contain backup/recovery terms.
+!phase5/backup-sets/
+!phase5/backup-sets/**
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+build/
+coverage/
+
+# --- Editors / IDE ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Linux/package build leftovers ---
+*.deb.tmp
+*.rpm.tmp
+*.tar.tmp
+*.gz.tmp
+
+# --- Test run outputs ---
+tests/last-test-run.log
+
+# --- Local-only machine inventory exports ---
+*machine-record*.txt
+*machine-record*.json
+*inventory-local*.txt
+*inventory-local*.json
