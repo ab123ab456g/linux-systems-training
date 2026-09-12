@@ -1,266 +1,44 @@
-# Linux Systems Training
+# Linux Training
 
-A hands-on, scenario-based Linux systems administration and infrastructure training project.
+同一台 Linux Server、同一套 Report System，依序練習：
 
-This repository uses the same Linux server and Report System story across all phases so that each phase builds on the previous one instead of becoming an isolated command exercise.
+1. Phase 1：接手正常系統、巡檢與建立 baseline。
+2. Phase 2：故障注入、診斷、修復與恢復。
+3. Phase 3：在既有系統上部署 Report Worker。
+4. Phase 4：正式上線後的日常維運與變更管理。
 
-The training path starts from taking over a normal Linux machine and gradually extends into troubleshooting, deployment, change management, recovery, performance, security, automation, containers, multi-host operations, and infrastructure as code.
+`ppt/` 保留既有簡報；其餘目錄是可執行教材、情境、驗證、回復與測試素材。
 
-## Training Philosophy
+## 主要應用
 
-The core workflow is:
+- `report-app.service`：HTTP Report App，預設 `127.0.0.1:8080`
+- `report-worker.service`：背景分析 worker
+- `report-worker.timer`：定期觸發 worker
 
-```text
-Environment
-→ Machine Record
-→ Baseline
-→ Inventory
-→ Lab / Scenario
-→ Change or Fault
-→ Verify
-→ Diagnose if needed
-→ Rollback / Recovery
-→ Reset
-→ Final Record
-```
-
-The goal is not just to memorize Linux commands. Each command should answer a concrete operational question and fit into a repeatable system workflow.
-
-## Phase Overview
-
-| Phase | Topic | Core Question |
-|---|---|---|
-| Phase 1 | System takeover and inspection | What is the current state of this Linux system? |
-| Phase 2 | Troubleshooting and recovery | What is broken, where is it broken, and how do I fix it? |
-| Phase 3 | Deployment and expansion | How do I safely build and add a new service? |
-| Phase 4 | Production change management | How do I change a running system safely? |
-| Phase 5 | Backup, restore, and disaster recovery | How do I recover from data or system failure? |
-| Phase 6 | Performance and capacity planning | Why is the system slow, and how much load can it handle? |
-| Phase 7 | Security hardening and exposure management | What is unnecessarily exposed or over-privileged? |
-| Phase 8 | Advanced infrastructure operations | How do I scale single-host administration into automation, multi-host, containers, and IaC? |
-
-## Phase 1 — System Takeover
-
-Inspect and record a normal Linux machine before making changes.
-
-Topics include:
-
-- identity, groups, sudo, sessions
-- OS, kernel, hostname, hardware
-- disks, filesystems, mounts, capacity
-- network interfaces, routes, DNS
-- processes, services, ports, sockets
-- CPU, RAM, disk resources
-- logs, packages, schedules, environment
-- firewall and basic security state
-- Report App verification
-
-The key output is a reproducible machine record and baseline.
-
-## Phase 2 — Troubleshooting
-
-Inject controlled failures into the same environment and practice:
-
-```text
-Detect
-→ Inspect
-→ Isolate
-→ Fix
-→ Verify
-→ Rollback
-```
-
-Scenarios cover permissions, storage, filesystems, networking, DNS, processes, services, ports, resources, logs, packages, schedules, environment, and firewall issues.
-
-## Phase 3 — Deployment and Expansion
-
-Deploy and operate an additional Report Worker service while the original Report App remains available.
-
-Topics include users and groups, packages, directories, storage, networking, systemd, ports, environment variables, schedules, logs, firewall rules, startup, verification, and recovery.
-
-## Phase 4 — Change Management
-
-Practice controlled production changes:
-
-```text
-Observe
-→ Plan
-→ Backup
-→ Change
-→ Verify
-→ Monitor
-→ Rollback if needed
-```
-
-Examples include package updates, application upgrades, configuration changes, permissions, service settings, ports, firewall rules, DNS/network changes, schedules, environment variables, resource limits, cleanup, backup/restore, credential rotation, and reload/restart operations.
-
-## Phase 5 — Backup, Restore, and Disaster Recovery
-
-Recover data, configuration, application, service, and infrastructure state from trustworthy recovery points.
-
-The recovery workflow focuses on:
-
-```text
-Assess
-→ Select Recovery Point
-→ Protect Current State
-→ Restore
-→ Verify
-→ Failback
-```
-
-## Phase 6 — Performance and Capacity Planning
-
-Build a baseline, measure the system, isolate bottlenecks, tune safely, and compare before/after results.
-
-Coverage includes:
-
-- CPU and memory
-- disk usage and I/O
-- network throughput and latency
-- service response time
-- process/thread counts
-- file descriptors and sockets
-- resource limits
-- stress testing
-- capacity forecasting
-- scale-up / scale-out decisions
-
-## Phase 7 — Security Hardening
-
-Audit the current attack surface and reduce unnecessary exposure without breaking required services.
-
-Coverage includes:
-
-- login sessions and sudo privileges
-- unused users and groups
-- file ownership and permissions
-- SUID / SGID
-- SSH configuration and hardening
-- listening ports and services
-- firewall and interface exposure
-- authentication failures
-- service accounts
-- secrets, credentials, and SSH keys
-- security package updates
-- continuous baseline monitoring
-
-## Phase 8 — Advanced Infrastructure Operations
-
-Extend the previous skills from one host into infrastructure operations.
-
-Topics include:
-
-- automation and scheduling
-- account lifecycle governance
-- data migration
-- release / rollout workflows
-- boot and shutdown dependencies
-- remote and multi-host operations
-- containers
-- advanced storage and networking
-- kernel and driver management
-- specialized services such as Nginx, PostgreSQL, and Redis
-- Infrastructure as Code / multi-host automation
-
-## Repository Structure
-
-```text
-linux-systems-training/
-├── common/          # shared Report App / Worker / helper scripts
-├── docs/            # phase notes and matrix coverage documents
-├── packages/        # controlled package training assets
-├── phase1/ ... phase8/
-├── ppt/             # training slide decks
-├── runtime/         # generated training state (ignored by Git)
-├── tests/           # automated shell test suite
-└── tools/           # helper utilities
-```
-
-## Lab Script Convention
-
-Depending on the phase, scenario directories may include scripts such as:
-
-```text
-prepare.sh
-inventory.sh
-measure.sh
-fault.sh
-verify.sh
-rollback.sh
-failback.sh
-reset.sh
-```
-
-Typical meaning:
-
-- `prepare.sh` — build the controlled lab state
-- `inventory.sh` / `measure.sh` — inspect or record current state
-- `fault.sh` — inject a training fault where applicable
-- `verify.sh` — check whether the expected state is satisfied
-- `rollback.sh` — return to the state before the current change
-- `failback.sh` — restore the previous production/recovery state
-- `reset.sh` — return the lab to its initial training state
-
-## Automated Tests
-
-Run the full safe shell test suite:
+## 快速查看
 
 ```bash
-bash tests/test-all.sh
+./tools/status.sh
 ```
 
-Useful individual checks include:
+> 注意：部分 Lab 需要 root 權限、systemd、loop device 或真實 Linux VM。WSL 某些項目會受限。
 
-```bash
-bash tests/test-structure.sh
-bash tests/test-syntax.sh
-bash tests/test-phase1.sh
-bash tests/test-phase8.sh
-bash tests/test-scenarios.sh
-bash tests/test-rollback.sh
-bash tests/test-idempotency.sh
-```
 
-The repository test harness is designed around the safe training/runtime model. Destructive production actions should be performed only in disposable VMs or intentionally prepared lab environments.
+## Phase 5 — Backup / Restore / Disaster Recovery
+Recover data, configuration, application, service and infrastructure state from trustworthy recovery points, verify consistency, and fail back safely.
 
-## Recommended Environment
 
-A Linux VM is recommended for the full course.
+## Phase 6
+效能分析 / 容量規劃：Baseline → Measure → Isolate → Tune → Verify → Monitor → Capacity Planning。
 
-Some labs require features that may be limited or behave differently under WSL, including:
 
-- systemd behavior
-- loop devices
-- mounts and filesystems
-- firewall / nftables
-- LVM
-- kernel modules and drivers
-- low-level networking
-- reboot / boot dependency exercises
+## Phase 7
+安全性檢查 / 權限與暴露面管理：Inventory → Assess → Isolate → Harden → Verify → Monitor。
 
-For destructive labs, use a disposable VM or snapshot-capable environment.
 
-## Safety Notes
+## Phase 8
+進階系統管理與基礎設施維運：Automation / Multi-host / Container / Advanced Infra / IaC。
 
-Before publishing machine records or lab outputs, make sure they do not contain real credentials or sensitive host information.
 
-Do not commit:
-
-- `.env` files containing real secrets
-- private SSH keys
-- API tokens or passwords
-- real credential files
-- generated runtime state
-- machine-specific logs or records containing sensitive information
-
-Use only fake or training credentials in public examples.
-
-## License
-
-This repository uses a dual-license model:
-
-- **Source code, shell scripts, and software-oriented files:** MIT License — see [`LICENSE`](LICENSE).
-- **Educational content, documentation, slide decks, DOCX files, diagrams, exercises, and course materials:** Creative Commons Attribution 4.0 International (CC BY 4.0) — see [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md).
-
-In short: code can be reused under MIT, while educational material can be shared and adapted with attribution.
+## Automated shell tests
+Run `bash tests/test-all.sh`.

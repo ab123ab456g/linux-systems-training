@@ -75,7 +75,8 @@ docs/
   phase7_matrix_coverage.docx
   phase8-infrastructure-operations.md
   phase8_matrix_coverage.docx
-  ppt-60slides-status.md
+  ppt-redesign-note.md
+  ppt-slide-counts.txt
   recovery-policy.md
   reset-policy.md
   script-implementation-status.md
@@ -1187,7 +1188,6 @@ phase8/
   setup.sh
   verify-all.sh
 ppt/
-  PPT_MANIFEST.md
   overview/
     linux_training_phase1-8_overview_60slides.pptx
   phase1/
