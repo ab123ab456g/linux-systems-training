@@ -1,0 +1,15 @@
+# Restore disk/filesystem
+
+## Scenario
+Recover a training image/snapshot/mount and verify filesystem/mount health.
+
+## Student objective
+Perform the recovery manually. Do not execute a pre-written recovery solution.
+
+## Required evidence
+- before-state observations
+- selected recovery point and reason
+- protected current-state artifact
+- recovery commands used
+- verification evidence
+- failback decision

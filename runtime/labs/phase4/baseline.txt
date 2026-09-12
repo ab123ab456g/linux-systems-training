@@ -1,0 +1,43 @@
+# topic=phase4-baseline
+# time=2026-09-12T17:47:18+00:00
+$ uname -a
+Linux localhost 6.18.35 #1 SMP Mon Aug 31 18:10:37 UTC 2026 x86_64 GNU/Linux
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 15:42 ?        00:00:02 /usr/bin/python3 /usr/bin/supervisord -n -c /etc/supervisord.conf
+root           3       1  0 15:42 ?        00:00:00 log_forwarder --service-name logrotate_loop -- /bin/bash /usr/local/init_scripts/logrotate_loop.sh
+root          22       3  0 15:42 ?        00:00:00 /bin/bash /usr/local/init_scripts/logrotate_loop.sh
+root          48      22  0 15:42 ?        00:00:00 sleep 86400
+root         205       1  0 15:42 ?        00:00:00 log_forwarder --service-name python_tool -- /bin/bash /usr/local/init_scripts/python_tool.sh
+root         228       1  0 15:42 ?        00:00:00 log_forwarder --service-name terminal_server -- /bin/bash /usr/local/init_scripts/terminal_server.sh
+root         237     205  0 15:42 ?        00:00:00 /bin/bash /usr/local/init_scripts/python_tool.sh
+oai          239     237  0 15:42 ?        00:00:00 tini -- /opt/pyvenv-python-tool/bin/python -m uvicorn --host 0.0.0.0 --port 8080 --log-config /opt/python-tool/uvicorn_logging.config jupyter_server.app:app
+root         258     228  0 15:42 ?        00:00:00 /bin/bash /usr/local/init_scripts/terminal_server.sh
+oai          262     258  0 15:42 ?        00:00:00 /bin/bash /opt/terminal-server/scripts/start-server.sh
+oai          280     239  0 15:42 ?        00:00:16 /opt/pyvenv-python-tool/bin/python -m uvicorn --host 0.0.0.0 --port 8080 --log-config /opt/python-tool/uvicorn_logging.config jupyter_server.app:app
+oai          281     262  0 15:42 ?        00:00:12 /opt/terminal-server/pyvenv/bin/python /opt/terminal-server/openai/server.py
+oai          300     280  0 15:42 ?        00:00:06 /opt/pyvenv/bin/python -m ipykernel_launcher -f /tmp/tmp5pqp8bxc.json
+root      147477       0  0 17:47 ?        00:00:00 timeout 30s bash -lc set -e ROOT=/mnt/data/linux-training-tests-work/linux-training OUT=/mnt/data/linux-training-phase1-8-complete-with-tests.zip bash "$ROOT/tests/test-all.sh" > "$ROOT/tests/last-test-run.log" 2>&1 tail -25 "$ROOT/tests/last-test-run.log" rm -f "$OUT" cd /mnt/data/linux-training-tests-work zip -qr "$OUT" linux-training printf '\nCounts:\n' printf 'tests sh: '; find "$ROOT/tests" -maxdepth 1 -type f -name '*.sh' | wc -l printf 'all sh: '; find "$ROOT" -type f -name '*.sh' | wc -l printf 'zip: %s\n' "$OUT" 
+root      147478  147477  0 17:47 ?        00:00:00 bash -lc set -e ROOT=/mnt/data/linux-training-tests-work/linux-training OUT=/mnt/data/linux-training-phase1-8-complete-with-tests.zip bash "$ROOT/tests/test-all.sh" > "$ROOT/tests/last-test-run.log" 2>&1 tail -25 "$ROOT/tests/last-test-run.log" rm -f "$OUT" cd /mnt/data/linux-training-tests-work zip -qr "$OUT" linux-training printf '\nCounts:\n' printf 'tests sh: '; find "$ROOT/tests" -maxdepth 1 -type f -name '*.sh' | wc -l printf 'all sh: '; find "$ROOT" -type f -name '*.sh' | wc -l printf 'zip: %s\n' "$OUT" 
+root      147481  147478  0 17:47 ?        00:00:00 bash /mnt/data/linux-training-tests-work/linux-training/tests/test-all.sh
+root      152430  147481  0 17:47 ?        00:00:00 bash /mnt/data/linux-training-tests-work/linux-training/tests/test-phase4.sh
+root      152439  152430  0 17:47 ?        00:00:00 bash /mnt/data/linux-training-tests-work/linux-training/phase4/baseline.sh
+root      152449  152439  0 17:47 ?        00:00:00 ps -ef
+$ ss -lntup
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+tcp   LISTEN 0      0          127.0.0.1:36735      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:36023      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:44379      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:60031      0.0.0.0:*          
+tcp   LISTEN 0      0            0.0.0.0:8080       0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:58107      0.0.0.0:*          
+tcp   LISTEN 0      0            0.0.0.0:1384       0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:45329      0.0.0.0:*          
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G  111M   30G   1% /
+tmpfs            64M     0   64M   0% /dev
+shm             3.0G     0  3.0G   0% /dev/shm
+kataShared      1.0M   12K 1012K   2% /etc/hosts

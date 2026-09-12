@@ -1,0 +1,12 @@
+# Data Migration Checklist
+- source capacity
+- destination capacity
+- owner/group/mode
+- initial sync
+- delta sync
+- writer stop
+- final sync
+- checksum / diff
+- switch
+- application verification
+- cleanup

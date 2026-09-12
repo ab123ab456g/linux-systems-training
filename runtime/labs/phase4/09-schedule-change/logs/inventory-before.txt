@@ -1,0 +1,9 @@
+# topic=schedule-automation-09-schedule-change
+# time=2026-09-12T17:47:40+00:00
+$ uname -a
+Linux localhost 6.18.35 #1 SMP Mon Aug 31 18:10:37 UTC 2026 x86_64 GNU/Linux
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+$ systemctl --no-pager list-timers --all
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to system scope bus via local transport: Host is down

@@ -1,0 +1,14 @@
+# Incident Report
+- Incident ID:
+- Detected at:
+- Impact:
+- Lost/corrupted scope:
+- Root cause (if known):
+- Selected recovery point:
+- RPO impact:
+- RTO:
+- Recovery actions:
+- Verification results:
+- Failback required: yes/no
+- New recovery point:
+- Follow-up actions:

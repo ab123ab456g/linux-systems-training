@@ -1,0 +1,12 @@
+[PASS] repository structure OK
+[PASS] bash -n passed for 689 shell scripts
+[PASS] phase1 smoke
+[PASS] phase2 smoke
+[PASS] phase3 smoke
+[PASS] phase4 smoke
+[PASS] phase5 smoke
+[PASS] phase6 smoke
+[PASS] phase7 smoke
+[PASS] phase8 smoke
+[PASS] phase2 fault contract
+[PASS] CI smoke suite passed

@@ -1,0 +1,83 @@
+# topic=performance-resource-11-resource-limit
+# time=2026-09-12T17:47:40+00:00
+$ uname -a
+Linux localhost 6.18.35 #1 SMP Mon Aug 31 18:10:37 UTC 2026 x86_64 GNU/Linux
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+$ lscpu
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  5
+On-line CPU(s) list:                     0-4
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD EPYC 9V74 80-Core Processor
+CPU family:                              25
+Model:                                   17
+Thread(s) per core:                      1
+Core(s) per socket:                      5
+Socket(s):                               1
+Stepping:                                1
+BogoMIPS:                                5192.28
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512_bf16 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm arch_capabilities
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               96 KiB (3 instances)
+L1i cache:                               96 KiB (3 instances)
+L2 cache:                                3 MiB (3 instances)
+L3 cache:                                32 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-4
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Vulnerable
+Vulnerability Spec store bypass:         Vulnerable
+Vulnerability Spectre v1:                Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+Vulnerability Spectre v2:                Vulnerable; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Vulnerable
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           5.8Gi       1.1Gi       4.7Gi        20Ki       222Mi       4.7Gi
+Swap:             0B          0B          0B
+$ uptime
+ 17:47:40 up  2:05,  0 users,  load average: 0.71, 0.42, 0.18
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G  111M   30G   1% /
+tmpfs            64M     0   64M   0% /dev
+shm             3.0G     0  3.0G   0% /dev/shm
+kataShared      1.0M   12K 1012K   2% /etc/hosts
+$ ps -eo pid\,ppid\,comm\,%cpu\,%mem --sort=-%cpu
+    PID    PPID COMMAND         %CPU %MEM
+    280     239 python           0.2  1.2
+    281     262 python           0.1  0.6
+    300     280 python           0.0  4.3
+      1       0 supervisord      0.0  0.4
+    239     237 tini             0.0  0.0
+    205       1 log_forwarder    0.0  0.0
+      3       1 log_forwarder    0.0  0.0
+     22       3 bash             0.0  0.0
+     48      22 sleep            0.0  0.0
+    228       1 log_forwarder    0.0  0.0
+    237     205 bash             0.0  0.0
+    258     228 bash             0.0  0.0
+    262     258 start-server.sh  0.0  0.0
+ 147477       0 timeout          0.0  0.0
+ 147478  147477 bash             0.0  0.0
+ 147481  147478 bash             0.0  0.0
+ 174451  147481 bash             0.0  0.0
+ 176136  174451 bash             0.0  0.0
+ 176165  176136 ps               0.0  0.0

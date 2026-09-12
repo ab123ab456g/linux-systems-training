@@ -1,0 +1,6 @@
+metric,before,after,unit,notes
+CPU,,,percent,
+RAM,,,MB,
+p95_latency,,,ms,
+throughput,,,req/s,
+disk_await,,,ms,

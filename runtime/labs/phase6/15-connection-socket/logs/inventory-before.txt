@@ -1,0 +1,32 @@
+# topic=network-port-firewall-15-connection-socket
+# time=2026-09-12T17:47:42+00:00
+$ uname -a
+Linux localhost 6.18.35 #1 SMP Mon Aug 31 18:10:37 UTC 2026 x86_64 GNU/Linux
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host proto kernel_lo 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 3a:3f:fa:e4:ae:32 brd ff:ff:ff:ff:ff:ff
+    inet 172.26.39.218/22 brd 172.26.39.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::383f:faff:fee4:ae32/64 scope link 
+       valid_lft forever preferred_lft forever
+$ ip route
+default via 172.26.36.1 dev eth0 
+172.26.36.0/22 dev eth0 proto kernel scope link src 172.26.39.218 
+$ ss -tulpn
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+tcp   LISTEN 0      0          127.0.0.1:36735      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:36023      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:44379      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:60031      0.0.0.0:*          
+tcp   LISTEN 0      0            0.0.0.0:8080       0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:58107      0.0.0.0:*          
+tcp   LISTEN 0      0            0.0.0.0:1384       0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:45329      0.0.0.0:*          

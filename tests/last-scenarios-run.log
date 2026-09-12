@@ -1,0 +1,575 @@
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/11-port
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/11-port
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/11-port
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/08-dns
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/08-dns
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/08-dns
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/04-hardware
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/04-hardware
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/04-hardware
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/12-resource
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/12-resource
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/12-resource
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/15-schedule
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/15-schedule
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/15-schedule
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/09-process
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/09-process
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/09-process
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/05-storage
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/05-storage
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/05-storage
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/07-network
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/07-network
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/07-network
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/03-system
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/03-system
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/03-system
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/06-filesystem
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/06-filesystem
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/06-filesystem
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/13-log
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/13-log
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/13-log
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/16-environment
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/16-environment
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/16-environment
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/10-service
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/10-service
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/10-service
+[2026-09-12 17:46:30] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/02-session
+[2026-09-12 17:46:30] sandbox state matches known-good
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/02-session
+[2026-09-12 17:46:30] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/02-session
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/17-security
+[2026-09-12 17:46:31] sandbox state matches known-good
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/17-security
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/17-security
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/14-package
+[2026-09-12 17:46:31] sandbox state matches known-good
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/14-package
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/14-package
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/01-identity
+[2026-09-12 17:46:31] sandbox state matches known-good
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/01-identity
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/01-identity
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/18-report-app
+[2026-09-12 17:46:31] sandbox state matches known-good
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/18-report-app
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase1/18-report-app
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/06-dns
+[2026-09-12 17:46:31] fault injected in sandbox: network-port-firewall-06-dns
+[PASS] fault correctly detected: phase2/scenarios/06-dns
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/06-dns
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/06-dns
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/10-resource
+[2026-09-12 17:46:31] fault injected in sandbox: performance-resource-10-resource
+[PASS] fault correctly detected: phase2/scenarios/10-resource
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/10-resource
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/10-resource
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/07-process
+[2026-09-12 17:46:31] fault injected in sandbox: 07-process
+[PASS] fault correctly detected: phase2/scenarios/07-process
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/07-process
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/07-process
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/03-storage
+[2026-09-12 17:46:31] fault injected in sandbox: storage-filesystem-data-03-storage
+[PASS] fault correctly detected: phase2/scenarios/03-storage
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/03-storage
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/03-storage
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/15-firewall
+[2026-09-12 17:46:31] fault injected in sandbox: network-port-firewall-15-firewall
+[PASS] fault correctly detected: phase2/scenarios/15-firewall
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/15-firewall
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/15-firewall
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/01-permission
+[2026-09-12 17:46:31] fault injected in sandbox: account-user-auth-01-permission
+[PASS] fault correctly detected: phase2/scenarios/01-permission
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/01-permission
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/01-permission
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/02-hardware
+[2026-09-12 17:46:31] fault injected in sandbox: kernel-driver-hardware-02-hardware
+[PASS] fault correctly detected: phase2/scenarios/02-hardware
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/02-hardware
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/02-hardware
+[2026-09-12 17:46:31] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/08-service
+[2026-09-12 17:46:31] fault injected in sandbox: service-systemd-release-08-service
+[PASS] fault correctly detected: phase2/scenarios/08-service
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/08-service
+[2026-09-12 17:46:31] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/08-service
+[2026-09-12 17:46:32] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/13-schedule
+[2026-09-12 17:46:32] fault injected in sandbox: schedule-automation-13-schedule
+[PASS] fault correctly detected: phase2/scenarios/13-schedule
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/13-schedule
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/13-schedule
+[2026-09-12 17:46:32] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/05-network
+[2026-09-12 17:46:32] fault injected in sandbox: network-port-firewall-05-network
+[PASS] fault correctly detected: phase2/scenarios/05-network
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/05-network
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/05-network
+[2026-09-12 17:46:32] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/12-package
+[2026-09-12 17:46:32] fault injected in sandbox: package-update-12-package
+[PASS] fault correctly detected: phase2/scenarios/12-package
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/12-package
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/12-package
+[2026-09-12 17:46:32] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/04-filesystem
+[2026-09-12 17:46:32] fault injected in sandbox: storage-filesystem-data-04-filesystem
+[PASS] fault correctly detected: phase2/scenarios/04-filesystem
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/04-filesystem
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/04-filesystem
+[2026-09-12 17:46:32] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/14-environment
+[2026-09-12 17:46:32] fault injected in sandbox: 14-environment
+[PASS] fault correctly detected: phase2/scenarios/14-environment
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/14-environment
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/14-environment
+[2026-09-12 17:46:32] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/09-port
+[2026-09-12 17:46:32] fault injected in sandbox: network-port-firewall-09-port
+[PASS] fault correctly detected: phase2/scenarios/09-port
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/09-port
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/09-port
+[2026-09-12 17:46:32] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/11-log
+[2026-09-12 17:46:32] fault injected in sandbox: log-11-log
+[PASS] fault correctly detected: phase2/scenarios/11-log
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/11-log
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase2/11-log
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/03-directory
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/03-directory
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/13-firewall
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/13-firewall
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/06-dns
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/06-dns
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/08-systemd-service
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/08-systemd-service
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/02-package
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/02-package
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/01-user-group
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/01-user-group
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/11-schedule
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/11-schedule
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/16-autostart
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/16-autostart
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/12-log
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/12-log
+[2026-09-12 17:46:32] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/04-storage
+[2026-09-12 17:46:32] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/04-storage
+[2026-09-12 17:46:33] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/07-deploy-worker
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/07-deploy-worker
+[2026-09-12 17:46:33] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/10-environment
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/10-environment
+[2026-09-12 17:46:33] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/17-recovery
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/17-recovery
+[2026-09-12 17:46:33] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/05-network
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/05-network
+[2026-09-12 17:46:33] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/15-service-verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/15-service-verification
+[2026-09-12 17:46:33] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/14-start-service
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/14-start-service
+[2026-09-12 17:46:33] WARN: scenario has not been prepared; inventory-only verification
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/09-port
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase3/09-port
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/13-disk-cleanup
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/13-disk-cleanup
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/15-restore
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/15-restore
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/05-service-change
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/05-service-change
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/07-firewall-change
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/07-firewall-change
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/18-post-change-monitoring
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/18-post-change-monitoring
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/09-schedule-change
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/09-schedule-change
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/06-port-change
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/06-port-change
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/03-config-change
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:33] rolled back sandbox state
+[2026-09-12 17:46:33] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/03-config-change
+[2026-09-12 17:46:33] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/16-credential-rotation
+[2026-09-12 17:46:33] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/16-credential-rotation
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/08-network-dns-change
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/08-network-dns-change
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/10-environment-change
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/10-environment-change
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/11-resource-limit
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/11-resource-limit
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/01-package-update
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/01-package-update
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/17-service-reload
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/17-service-reload
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/04-permission-change
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/04-permission-change
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/02-app-upgrade
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/02-app-upgrade
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/12-log-maintenance
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/12-log-maintenance
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/14-backup
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase4/14-backup
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/14-restore-schedule
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/14-restore-schedule
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/05-restore-single-file
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/05-restore-single-file
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/09-restore-app-version
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/09-restore-app-version
+[2026-09-12 17:46:34] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/16-verify-data-consistency
+[2026-09-12 17:46:34] sandbox state matches known-good
+[2026-09-12 17:46:34] rolled back sandbox state
+[2026-09-12 17:46:34] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/16-verify-data-consistency
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/15-rebuild-service
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/15-rebuild-service
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/07-restore-config
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/07-restore-config
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/19-close-incident
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/19-close-incident
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/02-select-backup
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/02-select-backup
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/17-verify-service
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/17-verify-service
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/03-verify-backup-integrity
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/03-verify-backup-integrity
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/10-restore-systemd
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/10-restore-systemd
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/04-protect-current-state
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/04-protect-current-state
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/08-restore-database
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/08-restore-database
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/18-cutback-production-traffic
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/18-cutback-production-traffic
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/11-restore-permissions
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/11-restore-permissions
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/12-restore-storage
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/12-restore-storage
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/13-restore-network
+[2026-09-12 17:46:35] sandbox state matches known-good
+[2026-09-12 17:46:35] rolled back sandbox state
+[2026-09-12 17:46:35] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/13-restore-network
+[2026-09-12 17:46:35] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/06-restore-directory
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/06-restore-directory
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/01-assess-loss
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase5/01-assess-loss
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/12-service-response-time
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/12-service-response-time
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/21-before-after
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/21-before-after
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/17-service-resource-limits
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/17-service-resource-limits
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/03-disk-usage-baseline
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/03-disk-usage-baseline
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/22-capacity-forecast
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/22-capacity-forecast
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/01-cpu-baseline
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/01-cpu-baseline
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/09-disk-io-bottleneck
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/09-disk-io-bottleneck
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/16-process-priority
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/16-process-priority
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/10-disk-growth
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/10-disk-growth
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/06-high-cpu-process
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/06-high-cpu-process
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/02-ram-baseline
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/02-ram-baseline
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/04-disk-io-baseline
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/04-disk-io-baseline
+[2026-09-12 17:46:36] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/11-network-throughput-latency
+[2026-09-12 17:46:36] sandbox state matches known-good
+[2026-09-12 17:46:36] rolled back sandbox state
+[2026-09-12 17:46:36] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/11-network-throughput-latency
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/08-memory-pressure
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/08-memory-pressure
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/13-process-thread-growth
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/13-process-thread-growth
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/19-remove-workload
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/19-remove-workload
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/15-connection-socket
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/15-connection-socket
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/05-network-baseline
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/05-network-baseline
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/07-high-ram-process
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/07-high-ram-process
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/23-scale-decision
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/23-scale-decision
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/20-stress-test
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/20-stress-test
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/14-open-files-fd
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/14-open-files-fd
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/18-cache-buffer
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase6/18-cache-buffer
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/13-login-anomaly
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/13-login-anomaly
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/01-login-session
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/01-login-session
+[2026-09-12 17:46:37] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/10-firewall
+[2026-09-12 17:46:37] sandbox state matches known-good
+[2026-09-12 17:46:37] rolled back sandbox state
+[2026-09-12 17:46:37] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/10-firewall
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/17-credential-key
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/17-credential-key
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/08-open-ports
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/08-open-ports
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/05-file-permission
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/05-file-permission
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/19-close-ports
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/19-close-ports
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/02-sudo-root
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/02-sudo-root
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/20-ssh-hardening
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/20-ssh-hardening
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/09-listening-services
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/09-listening-services
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/11-exposed-interface
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/11-exposed-interface
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/07-ssh-config
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/07-ssh-config
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/06-suid-sgid
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/06-suid-sgid
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/21-security-update
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/21-security-update
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/18-cleanup-users-services
+[2026-09-12 17:46:38] sandbox state matches known-good
+[2026-09-12 17:46:38] rolled back sandbox state
+[2026-09-12 17:46:38] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/18-cleanup-users-services
+[2026-09-12 17:46:38] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/12-security-updates-assess
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/12-security-updates-assess
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/23-security-monitoring
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/23-security-monitoring
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/15-service-user
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/15-service-user
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/03-unused-users
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/03-unused-users
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/22-service-verification
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/22-service-verification
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/16-secret-exposure
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/16-secret-exposure
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/04-unused-groups
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/04-unused-groups
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/14-auth-failure
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase7/14-auth-failure
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/08-advanced-storage-network
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/08-advanced-storage-network
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/10-specialized-services
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/10-specialized-services
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/05-boot-shutdown
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/05-boot-shutdown
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/02-account-governance
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/02-account-governance
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/01-automation-scheduling
+[2026-09-12 17:46:39] sandbox state matches known-good
+[2026-09-12 17:46:39] rolled back sandbox state
+[2026-09-12 17:46:39] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/01-automation-scheduling
+[2026-09-12 17:46:39] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/09-kernel-driver
+[2026-09-12 17:46:40] sandbox state matches known-good
+[2026-09-12 17:46:40] rolled back sandbox state
+[2026-09-12 17:46:40] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/09-kernel-driver
+[2026-09-12 17:46:40] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/03-data-migration
+[2026-09-12 17:46:40] sandbox state matches known-good
+[2026-09-12 17:46:40] rolled back sandbox state
+[2026-09-12 17:46:40] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/03-data-migration
+[2026-09-12 17:46:40] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/11-iac-multihost
+[2026-09-12 17:46:40] sandbox state matches known-good
+[2026-09-12 17:46:40] rolled back sandbox state
+[2026-09-12 17:46:40] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/11-iac-multihost
+[2026-09-12 17:46:40] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/07-container
+[2026-09-12 17:46:40] sandbox state matches known-good
+[2026-09-12 17:46:40] rolled back sandbox state
+[2026-09-12 17:46:40] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/07-container
+[2026-09-12 17:46:40] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/06-remote-multihost
+[2026-09-12 17:46:40] sandbox state matches known-good
+[2026-09-12 17:46:40] rolled back sandbox state
+[2026-09-12 17:46:40] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/06-remote-multihost
+[2026-09-12 17:46:40] prepared /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/04-release-rollout
+[2026-09-12 17:46:40] sandbox state matches known-good
+[2026-09-12 17:46:40] rolled back sandbox state
+[2026-09-12 17:46:40] reset /mnt/data/linux-training-tests-work/linux-training/runtime/labs/phase8/04-release-rollout
+[PASS] scenario contract passed: 144 verified directories, 15 explicit fault scenarios

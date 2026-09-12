@@ -1,0 +1,11 @@
+# Recovery Report
+- Recovery target:
+- Backup / snapshot used:
+- Integrity checks:
+- Protected pre-restore state:
+- Restored objects:
+- Data-consistency checks:
+- Service checks:
+- Traffic cutover:
+- Observation period:
+- Final status:

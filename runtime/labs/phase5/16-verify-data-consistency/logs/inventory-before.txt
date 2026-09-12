@@ -1,0 +1,35 @@
+# topic=storage-filesystem-data-16-verify-data-consistency
+# time=2026-09-12T17:47:41+00:00
+$ uname -a
+Linux localhost 6.18.35 #1 SMP Mon Aug 31 18:10:37 UTC 2026 x86_64 GNU/Linux
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+$ lsblk -f
+NAME  FSTYPE FSVER LABEL UUID FSAVAIL FSUSE% MOUNTPOINTS
+vda                                          
+pmem0                                        
+$ df -hT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+overlay        overlay    32G  112M   30G   1% /
+tmpfs          tmpfs      64M     0   64M   0% /dev
+shm            tmpfs     3.0G     0  3.0G   0% /dev/shm
+kataShared     virtiofs  1.0M   12K 1012K   2% /etc/hosts
+$ findmnt
+TARGET               SOURCE                                                FSTYPE   OPTIONS
+/                    overlay                                               overlay  rw,relatime,lowerdir=/run/kata-containers/1f1d8019519545d2bf851badfca6a9e5/multi-layer/lower-0,upperdir=/run/kata-containers/1f1d8019519545d2bf851badfca6a9e5/multi-layer/upper/upper,workdir=/run/kata-containers/1f1d8019519545d2bf851badfca6a9e5/multi-layer/upper/work,uuid=on,fsync=volatile
+|-/proc              proc                                                  proc     rw,nosuid,nodev,noexec,relatime
+| |-/proc/keys       tmpfs[/null]                                          tmpfs    rw,nosuid,size=65536k,mode=755
+| |-/proc/timer_list tmpfs[/null]                                          tmpfs    rw,nosuid,size=65536k,mode=755
+| |-/proc/bus        proc[/bus]                                            proc     ro,relatime
+| |-/proc/fs         proc[/fs]                                             proc     ro,relatime
+| |-/proc/irq        proc[/irq]                                            proc     ro,relatime
+| `-/proc/sys        proc[/sys]                                            proc     ro,relatime
+|-/dev               tmpfs                                                 tmpfs    rw,nosuid,size=65536k,mode=755
+| |-/dev/pts         devpts                                                devpts   rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666
+| |-/dev/shm         shm                                                   tmpfs    rw,relatime
+| `-/dev/mqueue      mqueue                                                mqueue   rw,nosuid,nodev,noexec,relatime
+|-/sys               sysfs                                                 sysfs    ro,nosuid,nodev,noexec,relatime
+| `-/sys/fs/cgroup   cgroup2                                               cgroup2  ro,nosuid,nodev,noexec,relatime,nsdelegate
+|-/etc/hostname      kataShared[/passthrough/sandbox-d2d69433-hostname]    virtiofs rw,nodev,relatime
+|-/etc/hosts         kataShared[/passthrough/sandbox-42152fbd-hosts]       virtiofs rw,nodev,relatime
+`-/etc/resolv.conf   kataShared[/passthrough/sandbox-05a32d13-resolv.conf] virtiofs rw,nodev,relatime

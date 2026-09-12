@@ -1,0 +1,15 @@
+[Unit]
+Description=Linux Training Report App
+After=network.target
+
+[Service]
+Type=simple
+User=reportapp
+Group=reportapp
+EnvironmentFile=-/etc/report-app/report-app.env
+WorkingDirectory=/opt/report-app
+ExecStart=/usr/bin/python3 /opt/report-app/app/main.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

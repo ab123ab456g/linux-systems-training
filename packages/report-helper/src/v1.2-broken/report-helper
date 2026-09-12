@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+echo "report-helper 1.2-broken"; exit 1

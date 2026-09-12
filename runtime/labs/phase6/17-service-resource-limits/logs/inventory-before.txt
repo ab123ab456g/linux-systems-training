@@ -1,0 +1,24 @@
+# topic=service-systemd-release-17-service-resource-limits
+# time=2026-09-12T17:47:42+00:00
+$ uname -a
+Linux localhost 6.18.35 #1 SMP Mon Aug 31 18:10:37 UTC 2026 x86_64 GNU/Linux
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+$ systemctl --no-pager --failed
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to system scope bus via local transport: Host is down
+$ systemctl --no-pager list-units --type=service --state=running
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to system scope bus via local transport: Host is down
+$ systemctl get-default
+graphical.target
+$ ss -lntup
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+tcp   LISTEN 0      0          127.0.0.1:36735      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:36023      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:44379      0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:60031      0.0.0.0:*          
+tcp   LISTEN 0      0            0.0.0.0:8080       0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:58107      0.0.0.0:*          
+tcp   LISTEN 0      0            0.0.0.0:1384       0.0.0.0:*          
+tcp   LISTEN 0      0          127.0.0.1:45329      0.0.0.0:*          

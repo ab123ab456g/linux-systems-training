@@ -1,0 +1,14 @@
+{
+  "hostname": "lab-server",
+  "created_at": "sample",
+  "system": {
+    "status": "ok"
+  },
+  "hardware": {},
+  "storage": {},
+  "network": {},
+  "services": {
+    "report-app": "active"
+  },
+  "security": {}
+}

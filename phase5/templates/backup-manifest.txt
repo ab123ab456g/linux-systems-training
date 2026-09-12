@@ -1,0 +1,7 @@
+backup_id=
+created_at=
+source=
+files=
+checksum_file=
+application_version=
+database_schema_version=

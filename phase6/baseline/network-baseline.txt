@@ -1,0 +1,1 @@
+timestamp,interface,rx_bytes,tx_bytes,rx_errors,tx_errors,drops
