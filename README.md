@@ -258,4 +258,9 @@ Use only fake or training credentials in public examples.
 
 ## License
 
-No license has been selected yet. Add a license before reusing this repository outside its intended training context.
+This repository uses a dual-license model:
+
+- **Source code, shell scripts, and software-oriented files:** MIT License — see [`LICENSE`](LICENSE).
+- **Educational content, documentation, slide decks, DOCX files, diagrams, exercises, and course materials:** Creative Commons Attribution 4.0 International (CC BY 4.0) — see [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md).
+
+In short: code can be reused under MIT, while educational material can be shared and adapted with attribution.
