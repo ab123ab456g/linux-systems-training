@@ -2,7 +2,7 @@
 
 Hands-on, scenario-based Linux systems administration and infrastructure training from first machine inspection to troubleshooting, deployment, recovery, performance, security, automation, multi-host operations, containers, and Infrastructure as Code.
 
-This repository intentionally keeps the same Linux server / Report System story across the course so that later phases reuse earlier skills instead of becoming isolated command exercises.
+This repository keeps the same Linux server / Report System story across the course so that later phases reuse earlier skills instead of becoming isolated command exercises.
 
 ## Training Method
 
@@ -26,9 +26,67 @@ Environment
 
 The goal is not only to memorize commands. Each command should answer a concrete operational question and fit into a repeatable workflow.
 
+## Platform Support
+
+This project is **Linux-first**. The repository can be used from Linux, WSL2, and macOS, but the full system-administration course is designed around a real Linux environment.
+
+| Platform | Support | Recommended use |
+|---|---:|---|
+| Linux VM / Linux host | Full | Complete Phase 1–8 course |
+| WSL2 | High for user-space labs | Shell, packages, processes, services, networking, logs, scripting, and many Phase 1–7 exercises |
+| macOS | Partial | Generic shell practice and repository use; run a Linux VM for the full course |
+
+### Linux
+
+Linux is the reference platform. A disposable VM with snapshots is recommended for labs involving systemd, storage, firewall rules, LVM, kernel modules, low-level networking, reboot behavior, or destructive changes.
+
+### WSL2
+
+WSL2 supports a large portion of the course, especially:
+
+- Bash and shell scripting
+- `grep`, `sed`, `awk`, `find`
+- `apt`
+- process inspection
+- `systemctl` / `journalctl` when systemd is enabled
+- `ip`, `ss`, `ssh`, `curl`
+- package, service, environment, log, and troubleshooting labs
+
+Some areas are environment-dependent or limited, including boot/reboot exercises, kernel modules, drivers, raw block devices, LVM, firewall semantics, bridges/VLAN/bonding, and hardware-oriented labs.
+
+### macOS
+
+macOS is Unix-like but is not GNU/Linux. Generic shell tools work well, but Linux-specific administration tools and service/storage/network models differ.
+
+For the complete course, use macOS as the host and run an Ubuntu or other Linux VM.
+
+### Command Equivalents
+
+Some Linux tasks have functional equivalents on macOS, but they are **not exact one-to-one replacements**.
+
+Examples:
+
+| Linux | macOS equivalent | Notes |
+|---|---|---|
+| `systemctl` | `launchctl` | Different service models |
+| `journalctl` | `log show`, `log stream` | Different logging systems |
+| `apt` | `brew` | Different package ecosystems |
+| `ip addr` | `ifconfig` | Different output/configuration model |
+| `ip route` | `route -n get default`, `netstat -rn` | Routing syntax differs |
+| `ss -tulpn` | `lsof -i`, `netstat` | Socket/process display differs |
+| `lsblk` | `diskutil list` | Device model differs |
+| `blkid` | `diskutil info` | Filesystem metadata differs |
+| `findmnt` | `mount` | Not a direct equivalent |
+| `nft`, `ufw` | `pfctl` | Firewall models differ |
+| `systemd timer` | `launchd` | Scheduler model differs |
+
+GNU and BSD/macOS versions of commands such as `sed`, `stat`, `date`, `ps`, `find`, and `xargs` may also use different flags.
+
+See [`docs/platform-compatibility.md`](docs/platform-compatibility.md) for the detailed compatibility guide, command substitutions, GNU/BSD differences, and recommended platform strategy.
+
 ## Command Families
 
-The slide decks also teach common command families and option variants instead of showing only the base command.
+The slide decks teach common command families and option variants instead of showing only the base command.
 
 Examples:
 
@@ -75,23 +133,11 @@ The course introduces these variants in context and then combines them into larg
 
 ## Phase 1 — System Takeover
 
-Start from a normal Linux machine and establish a trustworthy baseline before changing anything.
+Establish a trustworthy normal-state baseline before changing anything.
 
-Coverage includes:
+Coverage includes identity and sudo, sessions, OS/kernel/hardware, disks/filesystems/mounts, networking/DNS, processes/services/ports, resources, logs, packages, schedules, environment, firewall, and Report App verification.
 
-- identity, UID/GID, groups, sudo
-- sessions and login history
-- OS, kernel, hostname, architecture
-- CPU, memory, PCI, USB, storage hardware
-- disks, filesystems, mounts, UUID and labels
-- interfaces, addresses, routes, DNS
-- processes, services, ports, sockets
-- CPU / RAM / disk resource state
-- logs, packages, schedules and environment
-- firewall and basic security state
-- Report App verification
-
-Primary output: a reproducible Machine Record and normal-state baseline.
+Primary output: a reproducible Machine Record and baseline.
 
 ## Phase 2 — Troubleshooting and Repair
 
@@ -106,17 +152,11 @@ Detect
 → Rollback
 ```
 
-Scenarios cover permissions, hardware, storage, filesystem, network, DNS, processes, services, ports, resources, logs, packages, schedules, environment, and firewall failures.
-
 ## Phase 3 — Deployment and Expansion
 
-Deploy an additional Report Worker while the original Report App remains available.
-
-Coverage includes users/groups, packages, directories, storage, networking, DNS, systemd, ports, environment variables, schedules, logs, firewall rules, startup, verification, and recovery.
+Deploy an additional Report Worker while the original Report App remains available. Coverage includes users/groups, packages, directories, storage, networking, DNS, systemd, ports, environment variables, schedules, logs, firewall rules, startup, verification, and recovery.
 
 ## Phase 4 — Production Change Management
-
-Practice controlled changes on a running system.
 
 ```text
 Observe
@@ -128,11 +168,9 @@ Observe
 → Rollback if needed
 ```
 
-Examples include package updates, application upgrades, configuration changes, permissions, service settings, ports, firewall, DNS/network, schedules, environment variables, limits, cleanup, backup/restore, credential rotation, and reload/restart operations.
+Practice controlled changes such as package updates, application upgrades, configuration, permissions, services, ports, firewall, DNS/network, schedules, environment variables, limits, backup/restore, credential rotation, and reload/restart operations.
 
 ## Phase 5 — Backup, Restore, and Disaster Recovery
-
-Recover files, configuration, application, service, data, and infrastructure state from trustworthy recovery points.
 
 ```text
 Assess
@@ -143,11 +181,13 @@ Assess
 → Failback
 ```
 
+Recover files, configuration, application, service, data, and infrastructure state from trustworthy recovery points.
+
 ## Phase 6 — Performance and Capacity Planning
 
 Build baselines, measure workload behavior, isolate bottlenecks, tune safely, compare before/after results, and estimate capacity.
 
-Coverage includes CPU, RAM, disk usage, disk I/O, network throughput/latency, service response time, processes/threads, file descriptors, sockets, resource limits, stress testing, capacity forecasting, and scale-up / scale-out decisions.
+Coverage includes CPU, RAM, disk usage/I/O, network throughput/latency, service response time, processes/threads, file descriptors, sockets, resource limits, stress testing, capacity forecasting, and scale-up/scale-out decisions.
 
 ## Phase 7 — Security Hardening
 
@@ -159,25 +199,13 @@ Coverage includes login sessions, sudo, users/groups, permissions, SUID/SGID, SS
 
 Extend the previous skills from one host into infrastructure operations.
 
-Coverage includes:
-
-- automation and scheduling
-- account lifecycle governance
-- data migration
-- release / rollout workflows
-- boot and shutdown dependencies
-- remote and multi-host operations
-- containers
-- advanced storage and networking
-- kernel and driver management
-- Nginx / PostgreSQL / Redis style specialized services
-- Infrastructure as Code / multi-host automation
+Coverage includes automation/scheduling, account lifecycle governance, data migration, release/rollout workflows, boot/shutdown dependencies, remote and multi-host operations, containers, advanced storage/networking, kernel/driver management, specialized services such as Nginx/PostgreSQL/Redis, and Infrastructure as Code.
 
 ## Slide Decks
 
-`ppt/` contains the course slide decks for the overview and Phase 1–8.
+`ppt/` contains the overview and Phase 1–8 teaching decks.
 
-The current decks are designed as practical teaching material rather than short summaries. Each phase contains 60+ slides and follows the same general learning structure:
+Each phase contains 60+ slides and follows the same practical structure:
 
 ```text
 Phase context
@@ -196,14 +224,14 @@ Phase context
 → Final record
 ```
 
-Page count is allowed to exceed 60 when command families or practical scenarios need more space.
+Page count may exceed 60 when command families or practical scenarios need more space.
 
 ## Repository Structure
 
 ```text
 linux-systems-training/
 ├── common/          # shared Report App / Worker / helper scripts
-├── docs/            # phase notes and matrix coverage documents
+├── docs/            # phase notes, platform guide, matrix coverage
 ├── packages/        # controlled training package assets
 ├── phase1/ ... phase8/
 ├── ppt/             # overview + Phase 1–8 slide decks
@@ -227,8 +255,6 @@ failback.sh
 reset.sh
 ```
 
-Typical meaning:
-
 - `prepare.sh` — create the controlled training state
 - `inventory.sh` / `measure.sh` — inspect or record current state
 - `fault.sh` — inject a controlled training fault
@@ -237,7 +263,7 @@ Typical meaning:
 - `failback.sh` — restore the previous production/recovery state
 - `reset.sh` — return the lab to its initial training state
 
-`verify`, `rollback`, and `reset` are intentionally separate concepts; students should first understand and manually inspect the state before using the helper scripts as automated acceptance/recovery tools.
+`verify`, `rollback`, and `reset` are intentionally separate concepts. Students should first understand and manually inspect the state before using helper scripts as automated acceptance/recovery tools.
 
 ## Automated Tests
 
@@ -259,39 +285,11 @@ bash tests/test-rollback.sh
 bash tests/test-idempotency.sh
 ```
 
-The automated test harness uses the repository's safe training/runtime model. Real destructive administration exercises should be performed only in a disposable VM or an intentionally prepared lab environment.
-
-## Recommended Environment
-
-A Linux VM is recommended for the complete course.
-
-Some labs require or behave differently depending on access to:
-
-- systemd
-- loop devices
-- mounts and filesystems
-- firewall / nftables
-- LVM
-- kernel modules and drivers
-- low-level networking
-- reboot / boot dependency behavior
-- containers and multi-host networking
-
-WSL is useful for many command-line exercises, but a disposable VM provides the most complete environment for the full training path.
+The automated test harness uses the repository's safe training/runtime model. Real destructive administration exercises should be performed only in a disposable VM or intentionally prepared lab environment.
 
 ## Public Repository Safety
 
-Do not commit real credentials or private machine information.
-
-Examples that should remain local:
-
-- `.env` files containing real secrets
-- private SSH keys
-- API tokens and passwords
-- real credential exports
-- generated runtime state
-- local Machine Records containing sensitive host/IP information
-- transient logs and test outputs
+Do not commit real credentials or private machine information, including real `.env` secrets, private SSH keys, API tokens/passwords, generated runtime state, local Machine Records containing sensitive host/IP information, or transient logs/test outputs.
 
 Use fake or training-only credentials in public examples.
 
@@ -302,4 +300,4 @@ This repository uses dual licensing:
 - **Source code, shell scripts, and software-oriented files:** MIT License — see [`LICENSE`](LICENSE).
 - **Educational content, Markdown documentation, slide decks, DOCX materials, diagrams, exercises, and course content:** Creative Commons Attribution 4.0 International (CC BY 4.0) — see [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md).
 
-In short: the software is permissively reusable under MIT, while the teaching material may also be shared, adapted, and used commercially as long as appropriate attribution is provided.
+The software is permissively reusable under MIT, while the teaching material may be shared, adapted, and used commercially with appropriate attribution.
