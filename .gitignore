@@ -47,6 +47,31 @@ temp/
 !phase5/backup-sets/
 !phase5/backup-sets/**
 
+# --- Office temporary files ---
+~$*.docx
+~$*.pptx
+~$*.xlsx
+*.tmp.docx
+*.tmp.pptx
+*.tmp.xlsx
+
+# --- Presentation / document render outputs ---
+*_render/
+rendered/
+renders/
+montage/
+montages/
+*_montage.png
+*_contact.png
+slide-*.png
+page-*.png
+
+# --- Local archive/export artifacts ---
+*.zip.tmp
+*.tar.tmp
+*.gz.tmp
+*.7z.tmp
+
 # --- Python ---
 __pycache__/
 *.py[cod]
@@ -80,8 +105,6 @@ desktop.ini
 # --- Linux/package build leftovers ---
 *.deb.tmp
 *.rpm.tmp
-*.tar.tmp
-*.gz.tmp
 
 # --- Test run outputs ---
 tests/last-test-run.log
