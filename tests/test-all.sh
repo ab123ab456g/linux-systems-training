@@ -12,6 +12,8 @@ tests=(
   test-phase6.sh
   test-phase7.sh
   test-phase8.sh
+  test-phase9.sh
+  test-phase9-lifecycle.sh
   test-scenarios.sh
   test-rollback.sh
   test-idempotency.sh
