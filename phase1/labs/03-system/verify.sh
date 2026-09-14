@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_verify "${BASH_SOURCE[0]}" '03-system'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+R="$(lt_runtime_dir 03-system)"; s="${1:-changed}"; cur="$(hostname)"; orig="$(cat "$R/original-hostname")"
+case "$s" in changed) [ "$cur" = phase1-lab-host ];; restored) [ "$cur" = "$orig" ];; *) lt_die "stage changed|restored";; esac
+lt_log "PASS $s"

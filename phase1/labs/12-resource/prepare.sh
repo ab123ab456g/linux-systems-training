@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_prepare "${BASH_SOURCE[0]}" 'performance-resource-12-resource'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+R="$(lt_runtime_dir 12-resource)"
+if [ "${1:-}" = "--print-runtime" ]; then echo "$R"; exit 0; fi
+cat > "$R/cpu_load.sh" <<"EOF"
+#!/usr/bin/env bash
+while :; do :; done
+EOF
+chmod +x "$R/cpu_load.sh"
+lt_log prepared

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_verify "${BASH_SOURCE[0]}" 'storage-filesystem-data-05-storage'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+R="$(lt_runtime_dir 05-storage)"; stage="${1:-mounted}"; DEV="$(cat "$R/device")"
+case "$stage" in mounted) findmnt "$R/mnt" >/dev/null; blkid "$DEV" >/dev/null;; unmounted) ! findmnt "$R/mnt" >/dev/null;; *) lt_die "mounted|unmounted";; esac
+lt_log "PASS $stage"

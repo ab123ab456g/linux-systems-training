@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_verify "${BASH_SOURCE[0]}" 'network-port-firewall-18-report-app'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+stage="${1:-running}"
+case "$stage" in running) curl -fsS http://127.0.0.1:18088/health | grep -q '"status": "ok"'; ss -ltn | grep -q ":18088";; stopped) ! ss -ltn | grep -q ":18088";; *) lt_die "running|stopped";; esac
+lt_log "PASS $stage"

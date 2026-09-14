@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_verify "${BASH_SOURCE[0]}" 'kernel-driver-hardware-04-hardware'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+R="$(lt_runtime_dir 04-hardware)"; stage="${1:-attached}"
+case "$stage" in attached) DEV="$(cat "$R/device")"; losetup "$DEV" >/dev/null;; detached) DEV="$(cat "$R/device" 2>/dev/null || true)"; [ -z "$DEV" ] || ! losetup "$DEV" >/dev/null 2>&1;; *) lt_die "attached|detached";; esac
+lt_log "PASS $stage"

@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_prepare "${BASH_SOURCE[0]}" '02-session'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+R="$(lt_runtime_dir 02-session)"
+who > "$R/who.before" || true
+w > "$R/w.before" || true
+last -n 10 > "$R/last.before" || true
+lt_log "open a second terminal/SSH session manually"

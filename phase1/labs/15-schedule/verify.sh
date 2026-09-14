@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_verify "${BASH_SOURCE[0]}" 'schedule-automation-15-schedule'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+stage="${1:-installed}"
+case "$stage" in installed) systemctl list-timers --all | grep -q phase1-lab15.timer;; removed) [ ! -e /etc/systemd/system/phase1-lab15.timer ];; *) lt_die "installed|removed";; esac
+lt_log "PASS $stage"

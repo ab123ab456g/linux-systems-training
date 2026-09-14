@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_prepare "${BASH_SOURCE[0]}" 'kernel-driver-hardware-04-hardware'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+R="$(lt_runtime_dir 04-hardware)"
+if [ "${1:-}" = "--print-runtime" ]; then echo "$R"; exit 0; fi
+lt_require losetup
+truncate -s 64M "$R/hardware.img"
+if [ -f "$R/device" ] && losetup "$(cat "$R/device")" >/dev/null 2>&1; then
+  DEV="$(cat "$R/device")"
+else
+  DEV="$(lt_sudo losetup --find --show "$R/hardware.img")"
+  echo "$DEV" > "$R/device"
+fi
+lt_log "attached $DEV"

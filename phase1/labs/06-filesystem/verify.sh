@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_verify "${BASH_SOURCE[0]}" 'storage-filesystem-data-06-filesystem'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+R="$(lt_runtime_dir 06-filesystem)"; stage="${1:-changed}"
+case "$stage" in changed) [ "$(stat -c %a "$R/fs/a.txt")" = 640 ];; reset) [ "$(stat -c %a "$R/fs/a.txt")" = 644 ];; *) lt_die "changed|reset";; esac
+lt_log "PASS $stage"

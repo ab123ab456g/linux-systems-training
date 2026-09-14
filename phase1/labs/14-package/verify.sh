@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_verify "${BASH_SOURCE[0]}" 'package-update-14-package'
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+stage="${1:-v1}"
+case "$stage" in v1) dpkg-query -W -f='${Version}' phase1-helper 2>/dev/null | grep -qx 1.0;; v11) dpkg-query -W -f='${Version}' phase1-helper 2>/dev/null | grep -qx 1.1;; removed) ! dpkg-query -W phase1-helper >/dev/null 2>&1;; *) lt_die "v1|v11|removed";; esac
+lt_log "PASS $stage"

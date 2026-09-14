@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_reset "${BASH_SOURCE[0]}"
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+"$SCRIPT_DIR/rollback.sh"; lt_safe_rm_runtime 14-package

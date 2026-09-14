@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "$SCRIPT_DIR" && while [[ ! -f common/scripts/lab-runtime.sh && "$PWD" != / ]]; do cd ..; done; pwd)"
-source "$ROOT/common/scripts/lab-runtime.sh"
-lt_reset "${BASH_SOURCE[0]}"
+source "$SCRIPT_DIR/../../../common/scripts/lab-common.sh"
+lt_sudo nft delete table inet phase1_lab17 2>/dev/null || true
